@@ -1,0 +1,23 @@
+{
+  "snapshotAt": "2026-10-03T08:01:04Z",
+  "auditedAt": "2026-10-03T09:12:02.679Z",
+  "records": 3222,
+  "japan": 1303,
+  "other": 1919,
+  "geometryChanges": 121,
+  "classification": {
+    "独立した地点": 480,
+    "区域": 1663,
+    "概略位置のみ": 771,
+    "経路未確定・座標のみ": 7,
+    "一部の境界が未確定": 38,
+    "取消・終了": 218,
+    "区域未確定・座標のみ": 11,
+    "接続関係未確定・座標のみ": 28,
+    "経路・境界線": 2,
+    "描画位置なし": 4
+  },
+  "invalidGeometry": 0,
+  "selfIntersectingFilledRings": 0,
+  "corpusHash": "81b2e07f64e7a1a157bbdc4b20fe341775f26ecceab9bc64accfdffda049d320"
+}

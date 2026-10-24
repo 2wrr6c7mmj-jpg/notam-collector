@@ -1,0 +1,22 @@
+{
+  "TW-FA-1353": {
+    "title": "1150930--115年10月14日及15日-海洋委員會海巡署艦隊分署於淡水河口北方外海實施對海實彈射擊",
+    "bodySha256": "698e4f126f52787be76d502ca5f90a0146ab1e68f70917fbe141b1c1cbcee79b",
+    "documentSha256": [
+      "fdae56df32aea29c054c3766f7c2c6b39a592e80bb9d2926549e83658594266a",
+      "9ce4140eb6e0a72c4f28210bd8e73e13ed32c1a5aad586db38d6d301d73ba4a4"
+    ],
+    "reviewedAt": "2026-10-07",
+    "scope": "Complete official article body and all attachments reviewed; precise native schedule and hazard-zone cells; 1355 boat-only amendment explicitly references prior letter."
+  },
+  "TW-FA-1355": {
+    "title": "1151005--海洋委員會海巡署艦隊分署115年10月淡水河口外海對海實彈射擊（更新射擊船艇）",
+    "bodySha256": "dd13d738f64bbab083bdc643ec48adc2967baf9156f875a314216b43c3ef39ae",
+    "documentSha256": [
+      "e3b3c8625bd1c3eae43e70130547980cd7ca8a9dced27909d225c69771b018ce",
+      "5377aa77834d9d30120d5aee95e366b11c393c9808b75637d73dccf0140b2de8"
+    ],
+    "reviewedAt": "2026-10-07",
+    "scope": "Complete official article body and all attachments reviewed; precise native schedule and hazard-zone cells; 1355 boat-only amendment explicitly references prior letter."
+  }
+}

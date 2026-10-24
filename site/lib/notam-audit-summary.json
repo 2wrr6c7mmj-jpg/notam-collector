@@ -1,0 +1,98 @@
+{
+  "auditedAt": "2026-10-03T09:12:03.809Z",
+  "records": 3222,
+  "uniqueTexts": 3195,
+  "sourceCodes": 80,
+  "corpusHash": "81b2e07f64e7a1a157bbdc4b20fe341775f26ecceab9bc64accfdffda049d320",
+  "explanation": {
+    "explained": 1735,
+    "partial": 274,
+    "unresolved": 1213
+  },
+  "timing": {
+    "supported": 1131,
+    "continuous": 1874,
+    "unsupported": 217
+  },
+  "geometry": {
+    "nonfiniteOrOutOfRange": 0,
+    "invalidRadii": 0,
+    "selfIntersectingFilledRings": 0,
+    "noticesWithUnplottedReferenceCoordinates": 69,
+    "unplottedReferenceCoordinates": 566,
+    "bodyCoordinatesRead": 8543
+  },
+  "failures": [],
+  "families": {
+    "obstacle": {
+      "explained": 320,
+      "partial": 31,
+      "unresolved": 0
+    },
+    "japanese-uav": {
+      "explained": 219,
+      "partial": 52,
+      "unresolved": 0
+    },
+    "unsupported": {
+      "explained": 0,
+      "partial": 9,
+      "unresolved": 1213
+    },
+    "us-military": {
+      "explained": 47,
+      "partial": 22,
+      "unresolved": 0
+    },
+    "fireworks": {
+      "explained": 43,
+      "partial": 1,
+      "unresolved": 0
+    },
+    "cancellation": {
+      "explained": 99,
+      "partial": 0,
+      "unresolved": 0
+    },
+    "closure": {
+      "explained": 2,
+      "partial": 0,
+      "unresolved": 0
+    },
+    "us-drone": {
+      "explained": 11,
+      "partial": 12,
+      "unresolved": 0
+    },
+    "vessel-completion": {
+      "explained": 10,
+      "partial": 0,
+      "unresolved": 0
+    },
+    "vor-limitations": {
+      "explained": 5,
+      "partial": 3,
+      "unresolved": 0
+    },
+    "taiwan-activity": {
+      "explained": 301,
+      "partial": 53,
+      "unresolved": 0
+    },
+    "airspace": {
+      "explained": 598,
+      "partial": 90,
+      "unresolved": 0
+    },
+    "named-airspace": {
+      "explained": 59,
+      "partial": 0,
+      "unresolved": 0
+    },
+    "cloud-seeding": {
+      "explained": 21,
+      "partial": 1,
+      "unresolved": 0
+    }
+  }
+}

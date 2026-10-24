@@ -1,0 +1,107 @@
+{
+  "base": "/workspace/shared/notam-issued-new",
+  "baseDescription": "PR9 public main249e25d3 tree2bf4ac71 plus independently reviewed, unpublished issued patch",
+  "files": [
+    {
+      "source": "notam-update-bridge/msil-stage.mjs",
+      "sha256": "ac985aec788ede5711bff66e9a090fca4dd6c6892c19208741d9e0afc17949ca",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-evidence.mjs",
+      "sha256": "4c5eab2a44eeb95e63a7511bdeebfdd2056a7ac270bee9e42d199cb24db1a1e6",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-audit.mjs",
+      "sha256": "55b46ae9a435a88aa960b517355529edf6321f41c3115f92b3542f13f57e21bf",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-review-view.mjs",
+      "sha256": "f1cf36c72b0788077c9348f9831924e973d82540d8e40a35abcbba5680e21d71",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-relations.mjs",
+      "sha256": "1bf4882282d7833f4b31831d818b602a99a22fbe12abb5e2f00288246d292a27",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-pagination.mjs",
+      "sha256": "a97210ac12253ba559c890f0be16a555522a128d034893f38727546e22206f9a",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-listing-state.mjs",
+      "sha256": "f29e620cca7475607762f79e749e8989496fe358169a455722fda6d309d64caa",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-periods.mjs",
+      "sha256": "6048ebd19930d731f00c13c25eef40ff896659e404ad40464e1495d65b5caa03",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-source-schedule.mjs",
+      "sha256": "383d543c767be3bc8e990bceb7b9bf3105554b54fee6cd9455377db7955ae0a7",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-time-zone-proof.mjs",
+      "sha256": "3eddcac8e09d4cd608b1b71d1a1d06cba3835ddf76de56ad7d02c699c0df9efe",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-official-time-proofs.mjs",
+      "sha256": "fc9a65815c25525e0835c0edb4a7a8b380b16b469bdbd141941918cc9a49f7b6",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-time-disclosure.mjs",
+      "sha256": "b76ecd4800f4d4a19cd93ea234ee1b680e827990563364f580ed1918c242c1c6",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/integrate-msil.mjs",
+      "sha256": "a2394e32776ec364fcc8fe12ba30732717d2b1e5f6ac1d411cecf1aa41ba2795",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "shared/bombing-activity.mjs",
+      "sha256": "e66713d438cd2464e61a1481002c3b25a47395fb23bb2198c18eeab13ef92850",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-static-trial/src/msil-contract.mjs",
+      "sha256": "d3c8a5813871208c5264950cc2f491611e61930015ac2f093831e93bc248e3eb",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-supplement.mjs",
+      "sha256": "c5e184c6b98d4b317960fe63dc9192e0df8aed54d9623f2d67d42ab075af2336",
+      "kind": "extract exact publicSupplement function only; no fs orchestration"
+    },
+    {
+      "source": "notam-update-bridge/msil-public-artifact.mjs",
+      "sha256": "fe3e11173ae8760ead0624c2eb44de201774c4baaa516d4f15ecc6f7e575829e",
+      "kind": "extract pure createMsilPublicArtifact and helpers; omit fs/path functions"
+    },
+    {
+      "source": "notam-update-bridge/review/msil-candidate-review-20261003.json",
+      "sha256": "d74243f1584bb23f7ddf0f9554f853f26075bd0e382ad82cea07ebe1316aa377",
+      "kind": "static JSON converted to ESM default export; no runtime fs"
+    },
+    {
+      "source": "shared/msil-publication.mjs",
+      "sha256": "6f4778a4f93e05964dfb75ea4f6a121a6054ae5c3bfd3422cfb78cf6c7450f15",
+      "kind": "byte-identical"
+    },
+    {
+      "source": "notam-update-bridge/msil-time-basis.mjs",
+      "sha256": "12b87724fe2927e664dc5df1e481b1692f19ab17d80d8f62a93f39cc9f28d800",
+      "kind": "byte-identical"
+    }
+  ],
+  "publicationReview": "Independent signoff received 2026-10-06T03:54Z; new587/old663 tests and both builds reported passing by owner"
+}

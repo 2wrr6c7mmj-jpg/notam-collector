@@ -1,0 +1,617 @@
+{
+  "items": [
+    {
+      "id": "NAVAREA XI 26-0430",
+      "location": "硫黄島東北東、射撃（１０月分）",
+      "text": "NO.26-0430 　　　発表日時：2026年09月26日 21時\n\n\nNORTH PACIFIC, NANPO SHOTO.\nGUNNERY. 2300Z TO 0900Z COMMENCING DAILY\n30 SEP TO 30 OCT. AREA BOUNDED BY\n28-15-15N 146-29-47E\n25-25-16N 147-37-47E\n25-00-16N 145-35-48E\n27-55-15N 144-57-48E.\nCANCEL THIS MSG 311000Z OCT.",
+      "issued": 1790424000000,
+      "start": 1790809200000,
+      "end": 1793437200000,
+      "permanent": false,
+      "validityPeriods": [
+        {
+          "start": 1790809200000,
+          "end": 1790845200000
+        },
+        {
+          "start": 1790895600000,
+          "end": 1790931600000
+        },
+        {
+          "start": 1790982000000,
+          "end": 1791018000000
+        },
+        {
+          "start": 1791068400000,
+          "end": 1791104400000
+        },
+        {
+          "start": 1791154800000,
+          "end": 1791190800000
+        },
+        {
+          "start": 1791241200000,
+          "end": 1791277200000
+        },
+        {
+          "start": 1791327600000,
+          "end": 1791363600000
+        },
+        {
+          "start": 1791414000000,
+          "end": 1791450000000
+        },
+        {
+          "start": 1791500400000,
+          "end": 1791536400000
+        },
+        {
+          "start": 1791586800000,
+          "end": 1791622800000
+        },
+        {
+          "start": 1791673200000,
+          "end": 1791709200000
+        },
+        {
+          "start": 1791759600000,
+          "end": 1791795600000
+        },
+        {
+          "start": 1791846000000,
+          "end": 1791882000000
+        },
+        {
+          "start": 1791932400000,
+          "end": 1791968400000
+        },
+        {
+          "start": 1792018800000,
+          "end": 1792054800000
+        },
+        {
+          "start": 1792105200000,
+          "end": 1792141200000
+        },
+        {
+          "start": 1792191600000,
+          "end": 1792227600000
+        },
+        {
+          "start": 1792278000000,
+          "end": 1792314000000
+        },
+        {
+          "start": 1792364400000,
+          "end": 1792400400000
+        },
+        {
+          "start": 1792450800000,
+          "end": 1792486800000
+        },
+        {
+          "start": 1792537200000,
+          "end": 1792573200000
+        },
+        {
+          "start": 1792623600000,
+          "end": 1792659600000
+        },
+        {
+          "start": 1792710000000,
+          "end": 1792746000000
+        },
+        {
+          "start": 1792796400000,
+          "end": 1792832400000
+        },
+        {
+          "start": 1792882800000,
+          "end": 1792918800000
+        },
+        {
+          "start": 1792969200000,
+          "end": 1793005200000
+        },
+        {
+          "start": 1793055600000,
+          "end": 1793091600000
+        },
+        {
+          "start": 1793142000000,
+          "end": 1793178000000
+        },
+        {
+          "start": 1793228400000,
+          "end": 1793264400000
+        },
+        {
+          "start": 1793314800000,
+          "end": 1793350800000
+        },
+        {
+          "start": 1793401200000,
+          "end": 1793437200000
+        }
+      ],
+      "timeUncertain": false,
+      "purpose": "firing",
+      "shapes": [
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              28.254166666666666,
+              146.49638888888887
+            ],
+            [
+              25.421111111111113,
+              147.62972222222223
+            ],
+            [
+              25.004444444444445,
+              145.59666666666666
+            ],
+            [
+              27.920833333333334,
+              144.9633333333333
+            ]
+          ],
+          "inferredClose": true,
+          "provenance": "text"
+        }
+      ],
+      "warnings": [
+        "日毎の開始時刻から終了時刻までのUTC区間として解析。終了時刻が開始時刻より前なら翌日終了。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260430&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    },
+    {
+      "id": "NAVAREA XI 26-0434",
+      "location": "有効一覧（９／２６）",
+      "text": "NO.26-0434 　　　発表日時：2026年09月28日 21時\n\n\nNAVAREA XI WARNING MESSAGES IN FORCE\n261200Z SEP. ONLY THOSE MESSAGES ISSUED\nDURING LAST SIX WEEKS ARE LISTED HEREIN.\n0386 0387 0392 0398 0400 0401 0408 0425\n0426 0428 0430/26.\nTHE COMPLETE TEXT OF ALL IN FORCE\nNAVAREA XI WARNINGS ARE AVAILABLE FROM\nTHE JHOD WEBSITE \"HTTPS://WWW1.KAIHO.\nMLIT.GO.JP/JHD-E.HTML\" (ONLY \"E\" OF\nADDRESSING IS A CAPITAL LETTER).\nCANCEL 0417/26 AND 0431/26.",
+      "issued": 1790596800000,
+      "start": null,
+      "end": null,
+      "permanent": false,
+      "validityPeriods": [],
+      "timeUncertain": true,
+      "purpose": "other",
+      "shapes": [],
+      "warnings": [
+        "活動期間を安全に解析できません。原文を確認してください。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。",
+        "描画可能な座標なし"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260434&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    },
+    {
+      "id": "NAVAREA XI 26-0439",
+      "location": "東シナ海及び北太平洋西部、ロケット打上げ",
+      "text": "NO.26-0439 　　　発表日時：2026年10月02日 21時\n\n\nNORTH PACIFIC, WESTERN PART.\nROCKET LAUNCHING. \n070333Z TO 070453Z OCT, \nALTERNATE 0328 TO 0443Z DAILY 08 \nAND 14 OCT. AREAS BOUNDED BY\nA. 21-29-38N 128-41-23E\n   21-37-59N 129-53-50E\n   18-29-43N 130-17-36E\n   18-21-22N 129-06-34E.\nB. 12-45-02N 129-26-02E\n   12-55-17N 131-04-59E\n   08-14-49N 131-34-13E\n   08-04-33N 129-56-46E.\nCANCEL THIS MSG 070553Z OCT.",
+      "issued": 1790942400000,
+      "start": null,
+      "end": null,
+      "permanent": false,
+      "validityPeriods": [],
+      "timeUncertain": true,
+      "purpose": "firing",
+      "shapes": [
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              21.49388888888889,
+              128.68972222222223
+            ],
+            [
+              21.633055555555558,
+              129.8972222222222
+            ],
+            [
+              18.49527777777778,
+              130.29333333333332
+            ],
+            [
+              18.35611111111111,
+              129.10944444444445
+            ]
+          ],
+          "inferredClose": true,
+          "provenance": "text"
+        },
+        {
+          "kind": "polygon",
+          "points": [
+            [
+              12.750555555555556,
+              129.4338888888889
+            ],
+            [
+              12.921388888888888,
+              131.08305555555555
+            ],
+            [
+              8.246944444444443,
+              131.57027777777776
+            ],
+            [
+              8.075833333333334,
+              129.94611111111112
+            ]
+          ],
+          "inferredClose": true,
+          "provenance": "text"
+        }
+      ],
+      "warnings": [
+        "活動時間は反復・予備日・未確定条件を含むか未解析です。原文のUTC日程を確認してください。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260439&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    },
+    {
+      "id": "NAVAREA XI 26-0438",
+      "location": "マリアナ諸島、熱帯低気圧による港湾の閉鎖",
+      "text": "NO.26-0438 　　　発表日時：2026年10月01日 21時\n\n\nNORTH PACIFIC, MARIANAS.\nDUE TO TROPICAL STORM, THE FOLLOWING\nPORTS ARE CLOSED, UNTIL FURTHER NOTICE.\nA. SAIPAN, 15-11N 145-45E.\nB. TINIAN, 15-00N 145-38E.",
+      "issued": 1790856000000,
+      "start": null,
+      "end": null,
+      "permanent": false,
+      "validityPeriods": [],
+      "timeUncertain": true,
+      "purpose": "other",
+      "shapes": [
+        {
+          "kind": "point",
+          "points": [
+            [
+              15.183333333333334,
+              145.75
+            ]
+          ],
+          "provenance": "text"
+        },
+        {
+          "kind": "point",
+          "points": [
+            [
+              15,
+              145.63333333333333
+            ]
+          ],
+          "provenance": "text"
+        }
+      ],
+      "warnings": [
+        "活動時間は反復・予備日・未確定条件を含むか未解析です。原文のUTC日程を確認してください。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260438&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    },
+    {
+      "id": "NAVAREA XI 26-0428",
+      "location": "シンガポール海峡、海底線修理作業",
+      "text": "NO.26-0428 　　　発表日時：2026年09月25日 21時\n\n\nSINGAPORE STRAIT.\nSUBMARINE CABLE REPAIRING WORKS BY\nC/V PETER FABER, 23 SEP TO UNTIL \nFURTHER NOTICE. IN VICINITY OF\n01-16.75N 104-08.14E.\nCANCEL 0412/26 AND 0423/26.",
+      "issued": 1790337600000,
+      "start": null,
+      "end": null,
+      "permanent": false,
+      "validityPeriods": [],
+      "timeUncertain": true,
+      "purpose": "other",
+      "shapes": [
+        {
+          "kind": "point",
+          "points": [
+            [
+              1.2791666666666668,
+              104.13566666666667
+            ]
+          ],
+          "provenance": "text"
+        }
+      ],
+      "warnings": [
+        "活動期間を安全に解析できません。原文を確認してください。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260428&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    },
+    {
+      "id": "NAVAREA XI 26-0433",
+      "location": "北太平洋、マリアナ諸島東南東、海底線回収作業",
+      "text": "NO.26-0433 　　　発表日時：2026年09月28日 09時\n\n\nNORTH PACIFIC, MARIANAS.\nSUBMARINE CABLE RECOVERY WORKS BY\nM/V ANIEK, 1008 TONS, UNTIL FURTHER\nNOTICE.\nIN VICINITY OF LINE JOINING\n11-52N 146-04E 11-13N 146-59E\n11-18N 147-29E 11-10N 147-39E.\nCANCEL 0432/26.",
+      "issued": 1790553600000,
+      "start": null,
+      "end": null,
+      "permanent": false,
+      "validityPeriods": [],
+      "timeUncertain": true,
+      "purpose": "other",
+      "shapes": [
+        {
+          "kind": "point",
+          "points": [
+            [
+              11.866666666666667,
+              146.06666666666666
+            ]
+          ],
+          "provenance": "text"
+        },
+        {
+          "kind": "point",
+          "points": [
+            [
+              11.216666666666667,
+              146.98333333333332
+            ]
+          ],
+          "provenance": "text"
+        },
+        {
+          "kind": "point",
+          "points": [
+            [
+              11.3,
+              147.48333333333332
+            ]
+          ],
+          "provenance": "text"
+        },
+        {
+          "kind": "point",
+          "points": [
+            [
+              11.166666666666666,
+              147.65
+            ]
+          ],
+          "provenance": "text"
+        }
+      ],
+      "warnings": [
+        "活動時間は反復・予備日・未確定条件を含むか未解析です。原文のUTC日程を確認してください。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260433&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    },
+    {
+      "id": "NAVAREA XI 26-0408",
+      "location": "ジャワ海、沈船存在",
+      "text": "NO.26-0408 　　　発表日時：2026年09月13日 23時\n\n\nJAVA SEA.\nSUNKEN WRECK, EXISTS IN 04-32-31.8S\n114-01-36.0E.",
+      "issued": 1789308000000,
+      "start": null,
+      "end": null,
+      "permanent": false,
+      "validityPeriods": [],
+      "timeUncertain": true,
+      "purpose": "other",
+      "shapes": [
+        {
+          "kind": "point",
+          "points": [
+            [
+              -4.542166666666667,
+              114.02666666666667
+            ]
+          ],
+          "provenance": "text"
+        }
+      ],
+      "warnings": [
+        "活動期間を安全に解析できません。原文を確認してください。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260408&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    },
+    {
+      "id": "NAVAREA XI 26-0426",
+      "location": "南シナ海北部、パラワン島北、海底管敷設作業",
+      "text": "NO.26-0426 　　　発表日時：2026年09月24日 09時\n\n\nSOUTH CHINA SEA. NORTHERN PART.\nSUBMARINE PIPELINE WORKS BY \nM/V FORTITUDE. UNTIL 08 OCT 2026.\nIN VICINITY OF\nA.11-38.23N 118-56.36E.\nB.11-34.10N 118-53.54E.\nCANCEL THIS MSG 091600Z OCT.",
+      "issued": 1790208000000,
+      "start": null,
+      "end": null,
+      "permanent": false,
+      "validityPeriods": [],
+      "timeUncertain": true,
+      "purpose": "other",
+      "shapes": [
+        {
+          "kind": "point",
+          "points": [
+            [
+              11.637166666666667,
+              118.93933333333334
+            ]
+          ],
+          "provenance": "text"
+        },
+        {
+          "kind": "point",
+          "points": [
+            [
+              11.568333333333333,
+              118.89233333333334
+            ]
+          ],
+          "provenance": "text"
+        }
+      ],
+      "warnings": [
+        "活動期間を安全に解析できません。原文を確認してください。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260426&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    },
+    {
+      "id": "NAVAREA XI 26-0387",
+      "location": "フィリピン諸島、灯台消灯",
+      "text": "NO.26-0387 　　　発表日時：2026年08月24日 19時\n\n\nPHILIPPINES.\nAPO ISLAND LIGHT, 09-04.98N 123-16.22E, \nF2344, EXTINGUSHED.",
+      "issued": 1787565600000,
+      "start": null,
+      "end": null,
+      "permanent": false,
+      "validityPeriods": [],
+      "timeUncertain": true,
+      "purpose": "other",
+      "shapes": [
+        {
+          "kind": "point",
+          "points": [
+            [
+              9.083,
+              123.27033333333333
+            ]
+          ],
+          "provenance": "text"
+        }
+      ],
+      "warnings": [
+        "活動期間を安全に解析できません。原文を確認してください。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260387&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    },
+    {
+      "id": "NAVAREA XI 26-0398",
+      "location": "父島、二見港第３号灯浮標消灯、仮灯設置",
+      "text": "NO.26-0398 　　　発表日時：2026年09月07日 21時\n\n\nNORTH PACIFIC, NANPO SHOTO.\nCHICHI SHIMA, FUTAMI KO NR.3 LIGHT BUOY,\n27-04.9N 142-11.2E, L.L. VOL 1. 3225,\nEXTINGUISHED AND TEMPORARY LIGHT SET, \nFL G 4 SEC.\nCANCEL 0355/26.",
+      "issued": 1788782400000,
+      "start": null,
+      "end": null,
+      "permanent": false,
+      "validityPeriods": [],
+      "timeUncertain": true,
+      "purpose": "other",
+      "shapes": [
+        {
+          "kind": "point",
+          "points": [
+            [
+              27.081666666666667,
+              142.18666666666667
+            ]
+          ],
+          "provenance": "text"
+        }
+      ],
+      "warnings": [
+        "活動期間を安全に解析できません。原文を確認してください。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260398&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    },
+    {
+      "id": "NAVAREA XI 26-0401",
+      "location": "西之島、噴火警報",
+      "text": "NO.26-0401 　　　発表日時：2026年09月08日 11時\n\n\n080200UTC ISSUED AT 080200UTC SEP 2026\nVOLCANIC WARNING\nVOLCANO NAME:NISHINO SHIMA\nLOCATION:27-14.6N 140-52.7E INFLUENCE OF\nERUPTION IS EXPECTED WARNING WITHIN A\nRADIUS OF 0.6 MILES.\nCANCEL 0488/20.",
+      "issued": 1788832800000,
+      "start": null,
+      "end": null,
+      "permanent": false,
+      "validityPeriods": [],
+      "timeUncertain": true,
+      "purpose": "other",
+      "shapes": [
+        {
+          "kind": "point",
+          "points": [
+            [
+              27.243333333333332,
+              140.87833333333333
+            ]
+          ],
+          "provenance": "text"
+        }
+      ],
+      "warnings": [
+        "活動期間を安全に解析できません。原文を確認してください。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260401&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    },
+    {
+      "id": "NAVAREA XI 26-0400",
+      "location": "マリアナ諸島、グアム　ＮＡＶＴＥＸ局欠射",
+      "text": "NO.26-0400 　　　発表日時：2026年09月08日 05時\n\n\nNORTH PACIFIC, MARIANAS.\nGUAM HF NAVTEX STATION, V,\n13-29.0N 144-50.0E, OFF AIR.",
+      "issued": 1788811200000,
+      "start": null,
+      "end": null,
+      "permanent": false,
+      "validityPeriods": [],
+      "timeUncertain": true,
+      "purpose": "other",
+      "shapes": [
+        {
+          "kind": "point",
+          "points": [
+            [
+              13.483333333333333,
+              144.83333333333334
+            ]
+          ],
+          "provenance": "text"
+        }
+      ],
+      "warnings": [
+        "活動期間を安全に解析できません。原文を確認してください。",
+        "発表日時はJCGサイトの掲載時刻（JST、1時間単位）です。正確な発信時刻ではありません。",
+        "日本はNAVAREA XIの公表・調整国です。活動実施国・海域の主権を示しません。"
+      ],
+      "sourceUrl": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/cgi/disp_warnings.cgi?TYPE=NAVAREA11&TANA=260400&LANG=JP",
+      "sourceName": "海上保安庁 NAVAREA XI",
+      "sourceCountry": "JP"
+    }
+  ],
+  "revision": 1,
+  "status": {
+    "id": "jcg-navarea11",
+    "name": "海上保安庁 NAVAREA XI",
+    "region": "北太平洋西部・東南アジア",
+    "country": "JP",
+    "parser": "jcg-navarea11",
+    "url": "https://www1.kaiho.mlit.go.jp/TUHO/keiho/navarea11.html",
+    "state": "partial",
+    "checkedAt": 1790966947645,
+    "fetchedAt": 1790966947645,
+    "count": 12,
+    "pages": 23,
+    "detail": "NAVAREA XI公開中の10年分を確認。20件未取得。前回データを保持。2016年以前の別一覧と各国沿岸警報は対象外。日本は公表・調整国。国別の網羅性は未確認。"
+  }
+}

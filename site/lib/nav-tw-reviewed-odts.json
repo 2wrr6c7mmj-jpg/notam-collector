@@ -1,0 +1,16 @@
+{
+  "fdae56df32aea29c054c3766f7c2c6b39a592e80bb9d2926549e83658594266a": {
+    "bytes": 20460,
+    "article": "1353",
+    "pages": 2,
+    "reviewedAt": "2026-10-07",
+    "method": "Native ODT full text and complete document rendering verified; geometry/times read afresh from exact current bytes"
+  },
+  "e3b3c8625bd1c3eae43e70130547980cd7ca8a9dced27909d225c69771b018ce": {
+    "bytes": 25793,
+    "article": "1355",
+    "pages": 2,
+    "reviewedAt": "2026-10-07",
+    "method": "Native ODT full text and complete document rendering verified; geometry/times read afresh from exact current bytes"
+  }
+}

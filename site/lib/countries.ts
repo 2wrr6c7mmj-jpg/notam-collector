@@ -1,0 +1,2 @@
+export const countries=[{id:"all",label:"すべて"},{id:"JP",label:"日本"},{id:"CN",label:"中国"},{id:"TW",label:"台湾"},{id:"KR",label:"韓国"},{id:"KP",label:"北朝鮮"},{id:"PH",label:"フィリピン"},{id:"RU",label:"ロシア極東"}] as const;
+export function notamCountry(location:string){if(/^(RJ|RO)/.test(location))return"JP";if(/^RC/.test(location))return"TW";if(/^RK/.test(location))return"KR";if(/^ZK/.test(location))return"KP";if(/^Z/.test(location))return"CN";if(/^RP/.test(location))return"PH";if(/^U/.test(location))return"RU";return"unknown";}
