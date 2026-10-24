@@ -39,7 +39,30 @@ const env = {DB, NMS_RELAY_URL: RELAY_URL, NMS_RELAY_SECRET: 'in-process'};
 const fetcher = faaRelayFetcher();
 
 const pick = (list, csv) => csv ? list.filter(x => csv.split(',').includes(x)) : list;
-const report = {startedAt: started, notam: {}, nav: {}};
+const report = {startedAt: started, notam: {}, nav: {}, network: {}};
+
+// Network diagnostics: the Sites code reports only "fetch failed". Record the
+// underlying cause per host (DNS, reset, timeout, TLS, HTTP status) so a block
+// by a source can be told apart from a transient fault. URLs and secrets are
+// not recorded, only host names and error codes.
+const baseFetch = globalThis.fetch;
+globalThis.fetch = async (input, init) => {
+  let host = 'unknown';
+  try { host = new URL(input instanceof Request ? input.url : String(input)).host; } catch {}
+  const entry = report.network[host] ??= {requests: 0, ok: 0, status: {}, errors: {}};
+  entry.requests++;
+  const t0 = Date.now();
+  try {
+    const response = await baseFetch(input, init);
+    if (response.ok) entry.ok++; else entry.status[response.status] = (entry.status[response.status] || 0) + 1;
+    return response;
+  } catch (error) {
+    const cause = error?.cause?.code || error?.cause?.name || error?.name || 'Error';
+    const key = `${cause}${Date.now() - t0 > 20000 ? ' (slow)' : ''}`;
+    entry.errors[key] = (entry.errors[key] || 0) + 1;
+    throw error;
+  }
+};
 
 if (!args['export-only'] && !args['only-nav']) {
   const codes = pick(batchCodes, args.codes);
