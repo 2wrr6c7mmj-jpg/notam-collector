@@ -14,6 +14,10 @@ const TIMEOUT = 25000;
 
 let token = null; // {value, expiresAt}
 
+// Per-location outcome (status codes / short reason, never credentials),
+// copied into the collection report so failures can be diagnosed.
+export const faaDiagnostics = {};
+
 function secretFree(text) {
   let out = String(text ?? '');
   for (const secret of [process.env.FAA_NMS_CLIENT_ID, process.env.FAA_NMS_CLIENT_SECRET, token?.value]) {
@@ -77,8 +81,10 @@ export function faaRelayFetcher(base = globalThis.fetch) {
     const {codes} = JSON.parse(init?.body || '{}');
     try {
       const features = (await Promise.all((codes || []).map(code => fetchLocation(code, base)))).flat();
+      for (const code of codes || []) faaDiagnostics[code] = {ok: true, features: features.length};
       return Response.json({features, fetchedAt: Date.now()});
     } catch (error) {
+      for (const code of codes || []) faaDiagnostics[code] = {ok: false, reason: secretFree(error?.message)};
       console.error('[faa]', secretFree(error?.message));
       return Response.json({error: secretFree(error?.relay || 'FAA request failed')});
     }

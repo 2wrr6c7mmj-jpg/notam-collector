@@ -11,7 +11,7 @@ import {createHash} from 'node:crypto';
 import path from 'node:path';
 import {parseArgs} from 'node:util';
 import {D1Shim} from './runtime/d1.mjs';
-import {RELAY_URL, faaRelayFetcher} from './runtime/faa.mjs';
+import {RELAY_URL, faaRelayFetcher, faaDiagnostics} from './runtime/faa.mjs';
 import {batchCodes} from './site/lib/locations.ts';
 import {navSources} from './site/lib/nav-sources.ts';
 import {nmsPayload, nmsSummary, refreshCode} from './site/lib/nms-store.ts';
@@ -116,7 +116,7 @@ const files = [
     nav: {sources: navSummary.sources, count: navSummary.items.length, checkedAt: navSummary.checkedAt, fetchedAt: navSummary.fetchedAt},
     refreshMinutes: 120}),
 ];
-report.finishedAt = Date.now(); report.files = files;
+report.finishedAt = Date.now(); report.files = files; report.faa = faaDiagnostics;
 report.totals = {notam: nms.items.length, nav: nav.items.length,
   notamErrors: Object.values(report.notam).filter(r => r.error).length,
   navErrors: Object.values(report.nav).filter(r => r.state !== 'ok').length};
