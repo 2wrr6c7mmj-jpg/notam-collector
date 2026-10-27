@@ -28,6 +28,9 @@ test('FAA response shapes are read only when recognised', () => {
   assert.deepEqual(featuresOf({data: {geojson: {features: [{b: 2}]}}}), [{b: 2}]);
   assert.deepEqual(featuresOf({type: 'FeatureCollection', features: []}), []);
   assert.equal(featuresOf({status: 'Error'}), null);
+  assert.deepEqual(featuresOf({status: 'Success', data: {}}), [], 'an empty success means no NOTAMs');
+  assert.equal(featuresOf({status: 'Error', data: {}}), null);
+  assert.equal(featuresOf({status: 'Success', data: {message: 'x'}}), null);
 });
 
 function fakeFaa({fail} = {}) {

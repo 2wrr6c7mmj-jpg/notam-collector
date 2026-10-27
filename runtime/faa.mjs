@@ -48,6 +48,9 @@ export function featuresOf(body) {
   if (Array.isArray(body?.data?.geojson)) return body.data.geojson;
   if (Array.isArray(body?.data?.geojson?.features)) return body.data.geojson.features;
   if (Array.isArray(body?.features)) return body.features;
+  // NMS answers a location with no NOTAMs as {status:"Success", data:{}}.
+  // Verified against the Sites relay, which stored 0 items for the same codes.
+  if (body?.status === 'Success' && body.data && typeof body.data === 'object' && !Array.isArray(body.data) && !Object.keys(body.data).length) return [];
   return null;
 }
 
