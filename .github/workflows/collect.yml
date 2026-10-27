@@ -2,8 +2,12 @@ name: Collect NOTAM and navigational warnings
 run-name: collect-${{ github.event_name }}
 on:
   schedule:
-    # UTC even hours :35 = JST odd hours :35, the same slot as the Sites collector.
+    # Target: every 2 h at JST odd hours :35 (UTC even hours). GitHub delays or
+    # drops scheduled runs under load, so extra hourly slots exist; a run is
+    # skipped when the last collection finished less than 100 minutes ago.
     - cron: '35 */2 * * *'
+    - cron: '5 * * * *'
+    - cron: '50 * * * *'
   workflow_dispatch:
     inputs:
       codes:
@@ -37,12 +41,21 @@ jobs:
             git fetch --depth 1 "https://github.com/${GITHUB_REPOSITORY}.git" data
             git show FETCH_HEAD:state/notam.sqlite > state/notam.sqlite
             echo "Restored $(stat -c %s state/notam.sqlite) bytes of saved state."
+            last=$(git show -s --format=%ct FETCH_HEAD)
+            age=$(( ($(date +%s) - last) / 60 ))
+            echo "Last collection finished ${age} minutes ago."
+            if [ "${{ github.event_name }}" = schedule ] && [ "$age" -lt 100 ]; then
+              echo "SKIP=1" >> "$GITHUB_ENV"
+              echo "Skipping: a recent collection already covers this slot." | tee -a "$GITHUB_STEP_SUMMARY"
+            fi
           else
             echo "No data branch yet; starting with an empty store."
           fi
       - name: Run tests
+        if: env.SKIP != '1'
         run: npm test
       - name: Collect (failures keep the previous record)
+        if: env.SKIP != '1'
         env:
           FAA_NMS_CLIENT_ID: ${{ secrets.FAA_NMS_CLIENT_ID }}
           FAA_NMS_CLIENT_SECRET: ${{ secrets.FAA_NMS_CLIENT_SECRET }}
@@ -54,6 +67,7 @@ jobs:
           [ -n "$INPUT_SOURCES" ] && set -- "$@" --sources "$INPUT_SOURCES"
           npm run collect -- "$@"
       - name: Publish state and public data to the data branch
+        if: env.SKIP != '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
