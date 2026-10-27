@@ -65,7 +65,10 @@ async function fetchLocation(code, fetcher) {
     if (!response.ok) throw Object.assign(new Error(`FAA HTTP ${response.status}`), {relay: response.status === 429 ? 'rate limit 429' : response.status === 401 || response.status === 403 ? `unauthorized ${response.status}` : `HTTP ${response.status}`});
     const body = await response.json();
     const found = featuresOf(body);
-    if (!found) throw Object.assign(new Error('Unrecognised FAA response shape: ' + Object.keys(body || {}).join(',')), {relay: 'unrecognised response'});
+    if (!found) {
+      const data = body?.data, dataShape = data && typeof data === 'object' ? Object.entries(data).map(([k, v]) => `${k}:${Array.isArray(v) ? 'array' + v.length : v === null ? 'null' : typeof v}`).join(',') : String(data);
+      throw Object.assign(new Error(`Unrecognised FAA response shape: status=${String(body?.status).slice(0, 20)} data={${dataShape.slice(0, 120)}}`), {relay: 'unrecognised response'});
+    }
     features.push(...found);
     const total = Number(body?.data?.totalPages ?? body?.totalPages);
     if (Number.isSafeInteger(total) && total > 1) pages = total;
