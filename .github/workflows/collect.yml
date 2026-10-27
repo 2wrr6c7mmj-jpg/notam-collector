@@ -16,6 +16,10 @@ on:
       sources:
         description: 'Only these maritime source ids (comma separated, blank = all)'
         required: false
+      seed_china_from_site:
+        description: 'One-time: copy still-relevant Chinese warnings from the legacy Sites payload before collecting'
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -54,6 +58,9 @@ jobs:
       - name: Run tests
         if: env.SKIP != '1'
         run: npm test
+      - name: One-time backfill of Chinese warnings from Sites
+        if: env.SKIP != '1' && inputs.seed_china_from_site
+        run: node --no-warnings tools/seed-china-from-site.mjs --db state/notam.sqlite
       - name: Collect (failures keep the previous record)
         if: env.SKIP != '1'
         env:
