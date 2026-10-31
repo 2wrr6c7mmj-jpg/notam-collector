@@ -1,0 +1,1015 @@
+{
+ "startedAt": 1793461345506,
+ "notam": {
+  "RJJJ": {
+   "count": 1060,
+   "fetchedAt": 1793461346453,
+   "error": null
+  },
+  "RJSM": {
+   "count": 53,
+   "fetchedAt": 1793461349436,
+   "error": null
+  },
+  "RJCJ": {
+   "count": 31,
+   "fetchedAt": 1793461351919,
+   "error": null
+  },
+  "RJTY": {
+   "count": 36,
+   "fetchedAt": 1793461354352,
+   "error": null
+  },
+  "RJTA": {
+   "count": 20,
+   "fetchedAt": 1793461356691,
+   "error": null
+  },
+  "RJOI": {
+   "count": 33,
+   "fetchedAt": 1793461359212,
+   "error": null
+  },
+  "RODN": {
+   "count": 78,
+   "fetchedAt": 1793461361625,
+   "error": null
+  },
+  "ROTM": {
+   "count": 19,
+   "fetchedAt": 1793461363971,
+   "error": null
+  },
+  "ROAH": {
+   "count": 53,
+   "fetchedAt": 1793461366454,
+   "error": null
+  },
+  "RJAH": {
+   "count": 7,
+   "fetchedAt": 1793461368862,
+   "error": null
+  },
+  "RJST": {
+   "count": 0,
+   "fetchedAt": 1793461371198,
+   "error": null
+  },
+  "RJTJ": {
+   "count": 7,
+   "fetchedAt": 1793461373570,
+   "error": null
+  },
+  "RJNG": {
+   "count": 0,
+   "fetchedAt": 1793461375884,
+   "error": null
+  },
+  "RJNK": {
+   "count": 21,
+   "fetchedAt": 1793461378201,
+   "error": null
+  },
+  "RJNH": {
+   "count": 0,
+   "fetchedAt": 1793461380516,
+   "error": null
+  },
+  "RJFY": {
+   "count": 0,
+   "fetchedAt": 1793461382804,
+   "error": null
+  },
+  "RJFN": {
+   "count": 1,
+   "fetchedAt": 1793461385164,
+   "error": null
+  },
+  "RJFZ": {
+   "count": 0,
+   "fetchedAt": 1793461387399,
+   "error": null
+  },
+  "RJFA": {
+   "count": 0,
+   "fetchedAt": 1793461389717,
+   "error": null
+  },
+  "RJOH": {
+   "count": 13,
+   "fetchedAt": 1793461392032,
+   "error": null
+  },
+  "RJNA": {
+   "count": 15,
+   "fetchedAt": 1793461394405,
+   "error": null
+  },
+  "ZYSH": {
+   "count": 11,
+   "fetchedAt": 1793461396779,
+   "error": null
+  },
+  "ZBPE": {
+   "count": 6,
+   "fetchedAt": 1793461399155,
+   "error": null
+  },
+  "ZSHA": {
+   "count": 11,
+   "fetchedAt": 1793461401559,
+   "error": null
+  },
+  "ZGZU": {
+   "count": 9,
+   "fetchedAt": 1793461403895,
+   "error": null
+  },
+  "ZPKM": {
+   "count": 17,
+   "fetchedAt": 1793461406222,
+   "error": null
+  },
+  "ZHWH": {
+   "count": 4,
+   "fetchedAt": 1793461408651,
+   "error": null
+  },
+  "ZLHW": {
+   "count": 18,
+   "fetchedAt": 1793461410968,
+   "error": null
+  },
+  "ZWUQ": {
+   "count": 18,
+   "fetchedAt": 1793461413308,
+   "error": null
+  },
+  "ZJSA": {
+   "count": 5,
+   "fetchedAt": 1793461415630,
+   "error": null
+  },
+  "RCAA": {
+   "count": 330,
+   "fetchedAt": 1793461418240,
+   "error": null
+  },
+  "RCPO": {
+   "count": 1,
+   "fetchedAt": 1793461420821,
+   "error": null
+  },
+  "RCMQ": {
+   "count": 22,
+   "fetchedAt": 1793461423247,
+   "error": null
+  },
+  "RCKU": {
+   "count": 18,
+   "fetchedAt": 1793461425581,
+   "error": null
+  },
+  "RCSQ": {
+   "count": 0,
+   "fetchedAt": 1793461427912,
+   "error": null
+  },
+  "RCNN": {
+   "count": 43,
+   "fetchedAt": 1793461430263,
+   "error": null
+  },
+  "RCDC": {
+   "count": 4,
+   "fetchedAt": 1793461432651,
+   "error": null
+  },
+  "RCSS": {
+   "count": 149,
+   "fetchedAt": 1793461435163,
+   "error": null
+  },
+  "RCQS": {
+   "count": 0,
+   "fetchedAt": 1793461437626,
+   "error": null
+  },
+  "RCYU": {
+   "count": 27,
+   "fetchedAt": 1793461440009,
+   "error": null
+  },
+  "RCAY": {
+   "count": 2,
+   "fetchedAt": 1793461442352,
+   "error": null
+  },
+  "RCQC": {
+   "count": 10,
+   "fetchedAt": 1793461444748,
+   "error": null
+  },
+  "RKRR": {
+   "count": 497,
+   "fetchedAt": 1793461447304,
+   "error": null
+  },
+  "RKSO": {
+   "count": 67,
+   "fetchedAt": 1793461449862,
+   "error": null
+  },
+  "RKJK": {
+   "count": 31,
+   "fetchedAt": 1793461452193,
+   "error": null
+  },
+  "RKSG": {
+   "count": 19,
+   "fetchedAt": 1793461454603,
+   "error": null
+  },
+  "RKTI": {
+   "count": 1,
+   "fetchedAt": 1793461456994,
+   "error": null
+  },
+  "RKTU": {
+   "count": 31,
+   "fetchedAt": 1793461459356,
+   "error": null
+  },
+  "RKSW": {
+   "count": 0,
+   "fetchedAt": 1793461461719,
+   "error": null
+  },
+  "RKTP": {
+   "count": 1,
+   "fetchedAt": 1793461464038,
+   "error": null
+  },
+  "RKTY": {
+   "count": 1,
+   "fetchedAt": 1793461466352,
+   "error": null
+  },
+  "RKSM": {
+   "count": 8,
+   "fetchedAt": 1793461468666,
+   "error": null
+  },
+  "RKPE": {
+   "count": 0,
+   "fetchedAt": 1793461470903,
+   "error": null
+  },
+  "RKTE": {
+   "count": 0,
+   "fetchedAt": 1793461473143,
+   "error": null
+  },
+  "RKTN": {
+   "count": 6,
+   "fetchedAt": 1793461475504,
+   "error": null
+  },
+  "RKNN": {
+   "count": 1,
+   "fetchedAt": 1793461477871,
+   "error": null
+  },
+  "ZKKP": {
+   "count": 1,
+   "fetchedAt": 1793461480190,
+   "error": null
+  },
+  "ZKPY": {
+   "count": 9,
+   "fetchedAt": 1793461482624,
+   "error": null
+  },
+  "ZKWS": {
+   "count": 0,
+   "fetchedAt": 1793461484862,
+   "error": null
+  },
+  "RPHI": {
+   "count": 80,
+   "fetchedAt": 1793461487288,
+   "error": null
+  },
+  "RPLC": {
+   "count": 53,
+   "fetchedAt": 1793461489639,
+   "error": null
+  },
+  "RPLB": {
+   "count": 10,
+   "fetchedAt": 1793461492049,
+   "error": null
+  },
+  "RPVP": {
+   "count": 6,
+   "fetchedAt": 1793461494420,
+   "error": null
+  },
+  "RPVM": {
+   "count": 30,
+   "fetchedAt": 1793461496739,
+   "error": null
+  },
+  "RPLS": {
+   "count": 8,
+   "fetchedAt": 1793461499060,
+   "error": null
+  },
+  "RPMZ": {
+   "count": 18,
+   "fetchedAt": 1793461501384,
+   "error": null
+  },
+  "RPML": {
+   "count": 1,
+   "fetchedAt": 1793461503702,
+   "error": null
+  },
+  "RPMD": {
+   "count": 10,
+   "fetchedAt": 1793461506070,
+   "error": null
+  },
+  "RPUT": {
+   "count": 6,
+   "fetchedAt": 1793461508381,
+   "error": null
+  },
+  "RPUY": {
+   "count": 12,
+   "fetchedAt": 1793461510782,
+   "error": null
+  },
+  "RPVI": {
+   "count": 17,
+   "fetchedAt": 1793461513183,
+   "error": null
+  },
+  "RPMC": {
+   "count": 13,
+   "fetchedAt": 1793461515498,
+   "error": null
+  },
+  "UHHH": {
+   "count": 164,
+   "fetchedAt": 1793461517966,
+   "error": null
+  },
+  "UHMM": {
+   "count": 138,
+   "fetchedAt": 1793461520595,
+   "error": null
+  },
+  "UEEE": {
+   "count": 60,
+   "fetchedAt": 1793461523120,
+   "error": null
+  },
+  "UIII": {
+   "count": 89,
+   "fetchedAt": 1793461525484,
+   "error": null
+  },
+  "UHWW": {
+   "count": 15,
+   "fetchedAt": 1793461527909,
+   "error": null
+  },
+  "UHSS": {
+   "count": 16,
+   "fetchedAt": 1793461530284,
+   "error": null
+  },
+  "UHPP": {
+   "count": 6,
+   "fetchedAt": 1793461532765,
+   "error": null
+  },
+  "UHMA": {
+   "count": 1,
+   "fetchedAt": 1793461535104,
+   "error": null
+  }
+ },
+ "nav": {
+  "ph-namria": {
+   "state": "partial",
+   "count": 76,
+   "fetchedAt": 1793461537217,
+   "detail": "公式 JSON 本文 76件。日時の一部未確定 53件。公式掲載件数は有効件数と異なります。取消・全件網羅は原文確認が必要。"
+  },
+  "jcg-navarea11": {
+   "state": "ok",
+   "count": 30,
+   "fetchedAt": 1793461537214
+  },
+  "kr-gicoms": {
+   "state": "error",
+   "count": 11,
+   "fetchedAt": 1793439214141,
+   "detail": "公式サイト取得失敗: fetch failed。保存済み情報を維持。"
+  },
+  "tw-fisheries": {
+   "state": "error",
+   "count": 352,
+   "fetchedAt": 1790967228421,
+   "detail": "現行一覧: The operation was aborted due to timeout / RSS: The operation was aborted due to timeout。警告0件とは確認できません。保存済み原文を保持。"
+  },
+  "ln": {
+   "state": "partial",
+   "count": 82,
+   "fetchedAt": 1793461548721,
+   "detail": "当該地域の先頭2ページ以内で2ページ・40掲載行・40原文リンクを確認。今回本文保存29件・変更なし確認0件・現在ページ本文の今回未確認11件（保存未完了11件）・過去の掲載本文待ち3件。3ページ目以降は取得しません。過去分の既定確認範囲90日、範囲外待機0件。有効・取消関係と保存済み原文は保持。Bounded regional request budget。全国網羅は未確認。"
+  },
+  "tj": {
+   "state": "partial",
+   "count": 109,
+   "fetchedAt": 1793461552118,
+   "detail": "当該地域の先頭2ページ以内で2ページ・40掲載行・40原文リンクを確認。今回本文保存34件・変更なし確認0件・現在ページ本文の今回未確認6件（保存未完了6件）・過去の掲載本文待ち1件。3ページ目以降は取得しません。過去分の既定確認範囲90日、範囲外待機0件。有効・取消関係と保存済み原文は保持。Bounded regional request budget。全国網羅は未確認。"
+  },
+  "hb": {
+   "state": "ok",
+   "count": 74,
+   "fetchedAt": 1793461561282
+  },
+  "sd": {
+   "state": "partial",
+   "count": 162,
+   "fetchedAt": 1793461564450,
+   "detail": "当該地域の先頭2ページ以内で2ページ・40掲載行・40原文リンクを確認。今回本文保存29件・変更なし確認0件・現在ページ本文の今回未確認11件（保存未完了11件）・過去の掲載本文待ち11件。3ページ目以降は取得しません。過去分の既定確認範囲90日、範囲外待機0件。有効・取消関係と保存済み原文は保持。Bounded regional request budget。全国網羅は未確認。"
+  },
+  "lyg": {
+   "state": "partial",
+   "count": 49,
+   "fetchedAt": 1793461570003,
+   "detail": "当該地域の先頭2ページ以内で2ページ・40掲載行・40原文リンクを確認。今回本文保存32件・変更なし確認0件・現在ページ本文の今回未確認8件（保存未完了8件）・過去の掲載本文待ち0件。3ページ目以降は取得しません。過去分の既定確認範囲90日、範囲外待機0件。有効・取消関係と保存済み原文は保持。Bounded regional request budget。全国網羅は未確認。"
+  },
+  "js": {
+   "state": "ok",
+   "count": 44,
+   "fetchedAt": 1793461575268
+  },
+  "sh": {
+   "state": "ok",
+   "count": 253,
+   "fetchedAt": 1793461581330
+  },
+  "zj": {
+   "state": "partial",
+   "count": 117,
+   "fetchedAt": 1793461582742,
+   "detail": "当該地域の先頭2ページ以内で2ページ・40掲載行・40原文リンクを確認。今回本文保存39件・変更なし確認0件・現在ページ本文の今回未確認1件（保存未完了1件）・過去の掲載本文待ち1件。3ページ目以降は取得しません。過去分の既定確認範囲90日、範囲外待機0件。有効・取消関係と保存済み原文は保持。Bounded regional request budget。全国網羅は未確認。"
+  },
+  "fj": {
+   "state": "partial",
+   "count": 69,
+   "fetchedAt": 1793461591675,
+   "detail": "当該地域の先頭2ページ以内で2ページ・40掲載行・40原文リンクを確認。今回本文保存29件・変更なし確認0件・現在ページ本文の今回未確認11件（保存未完了11件）・過去の掲載本文待ち3件。3ページ目以降は取得しません。過去分の既定確認範囲90日、範囲外待機0件。有効・取消関係と保存済み原文は保持。Bounded regional request budget。全国網羅は未確認。"
+  },
+  "gd": {
+   "state": "partial",
+   "count": 189,
+   "fetchedAt": 1793461593935,
+   "detail": "当該地域の先頭2ページ以内で2ページ・40掲載行・40原文リンクを確認。今回本文保存32件・変更なし確認0件・現在ページ本文の今回未確認8件（保存未完了8件）・過去の掲載本文待ち8件。3ページ目以降は取得しません。過去分の既定確認範囲90日、範囲外待機0件。有効・取消関係と保存済み原文は保持。Bounded regional request budget。全国網羅は未確認。"
+  },
+  "sz": {
+   "state": "ok",
+   "count": 45,
+   "fetchedAt": 1793461602700
+  },
+  "gx": {
+   "state": "partial",
+   "count": 47,
+   "fetchedAt": 1793461606202,
+   "detail": "当該地域の先頭2ページ以内で2ページ・40掲載行・40原文リンクを確認。今回本文保存32件・変更なし確認0件・現在ページ本文の今回未確認8件（保存未完了8件）・過去の掲載本文待ち0件。3ページ目以降は取得しません。過去分の既定確認範囲90日、範囲外待機0件。有効・取消関係と保存済み原文は保持。Bounded regional request budget。全国網羅は未確認。"
+  },
+  "hn": {
+   "state": "partial",
+   "count": 85,
+   "fetchedAt": 1793461612284,
+   "detail": "当該地域の先頭2ページ以内で2ページ・40掲載行・40原文リンクを確認。今回本文保存32件・変更なし確認0件・現在ページ本文の今回未確認8件（保存未完了8件）・過去の掲載本文待ち6件。3ページ目以降は取得しません。過去分の既定確認範囲90日、範囲外待機0件。有効・取消関係と保存済み原文は保持。Bounded regional request budget。全国網羅は未確認。"
+  },
+  "cj": {
+   "state": "ok",
+   "count": 85,
+   "fetchedAt": 1793461620407
+  },
+  "js-local": {
+   "state": "ok",
+   "count": 41,
+   "fetchedAt": 1793461623351
+  },
+  "jx-local": {
+   "state": "ok",
+   "count": 40,
+   "fetchedAt": 1793461631340
+  },
+  "js-web": {
+   "state": "ok",
+   "count": 26,
+   "fetchedAt": 1793461640411
+  },
+  "cj-web": {
+   "state": "partial",
+   "count": 98,
+   "fetchedAt": 1793461643155,
+   "detail": "2ページ確認・本文取得2件・保存済み掲載7件・未確認ページあり・続きの一覧から警告記事を読み取れません。取得できた原文と前回データを保持。全分支局の網羅は未確認"
+  },
+  "zj-web": {
+   "state": "partial",
+   "count": 365,
+   "fetchedAt": 1793461634108,
+   "detail": "3ページ確認・本文取得38件・保存済み掲載20件・本文失敗2件・本文待ち13件・再試行待ち26件・未確認ページあり・本文診断 /ZJ/wszw/bmcx/hsskcx/hxjg/202607/t20260729_16308.html: The operation was aborted due to timeout; /ZJ/wszw/bmcx/hsskcx/hxjg/202607/t20260714_15815.html: The operation was aborted due to timeout。全分支局の網羅は未確認"
+  },
+  "tw-moa-ship": {
+   "state": "partial",
+   "count": 2000,
+   "fetchedAt": 1793461653150,
+   "detail": "公式JSON 2001行、完全重複を除く現行2000件、前回掲載の保存0件。最新掲載日=2026-10-28。添付本文は未解析。公開日を活動期間にしていません。国防部全件の代替ではありません。"
+  },
+  "hlj": {
+   "state": "partial",
+   "count": 36,
+   "fetchedAt": 1793461646829,
+   "detail": "3ページ確認・本文取得29件・保存済み掲載15件・本文失敗1件・本文待ち6件・再試行待ち1件・本文診断 /content/2026/hxtg/24064.html: fetch failed。全分支局の網羅は未確認"
+  },
+  "navarea-x": {
+   "state": "ok",
+   "count": 3,
+   "fetchedAt": 1793461670937
+  },
+  "navarea-xiv": {
+   "state": "partial",
+   "count": 0,
+   "fetchedAt": null,
+   "detail": "NAVAREA配信元の停止・待機条件を保持。自動再試行は行いません。"
+  },
+  "tw-motc": {
+   "state": "partial",
+   "count": 38,
+   "fetchedAt": 1793461655466,
+   "detail": "最新一覧15件。本文確認7件。全添付の意味解析は未完了。取得失敗3件。初回ページのみで全公告網羅ではありません。"
+  },
+  "navarea-ix": {
+   "state": "partial",
+   "count": 62,
+   "fetchedAt": 1793338874255,
+   "detail": "NAVAREA総保存量1,800,000バイト上限。既存原文・履歴を削除せず新規取込を保留。"
+  }
+ },
+ "network": {
+  "www1.kaiho.mlit.go.jp": {
+   "requests": 4,
+   "ok": 4,
+   "status": {},
+   "errors": {}
+  },
+  "geoportal.gov.ph": {
+   "requests": 1,
+   "ok": 1,
+   "status": {},
+   "errors": {}
+  },
+  "www.fa.gov.tw": {
+   "requests": 2,
+   "ok": 0,
+   "status": {},
+   "errors": {
+    "TimeoutError": 2
+   }
+  },
+  "www.gicoms.go.kr": {
+   "requests": 1,
+   "ok": 0,
+   "status": {},
+   "errors": {
+    "UND_ERR_CONNECT_TIMEOUT": 1
+   }
+  },
+  "www.msa.gov.cn": {
+   "requests": 735,
+   "ok": 600,
+   "status": {
+    "302": 135
+   },
+   "errors": {}
+  },
+  "www.zj.msa.gov.cn": {
+   "requests": 43,
+   "ok": 41,
+   "status": {},
+   "errors": {
+    "TimeoutError": 2
+   }
+  },
+  "www.js.msa.gov.cn": {
+   "requests": 3,
+   "ok": 3,
+   "status": {},
+   "errors": {}
+  },
+  "cj.msa.gov.cn": {
+   "requests": 4,
+   "ok": 4,
+   "status": {},
+   "errors": {}
+  },
+  "hlj.msa.gov.cn": {
+   "requests": 33,
+   "ok": 32,
+   "status": {},
+   "errors": {
+    "ETIMEDOUT": 1
+   }
+  },
+  "data.moa.gov.tw": {
+   "requests": 1,
+   "ok": 1,
+   "status": {},
+   "errors": {}
+  },
+  "www.motcmpb.gov.tw": {
+   "requests": 3,
+   "ok": 3,
+   "status": {},
+   "errors": {}
+  },
+  "aton.motcmpb.gov.tw": {
+   "requests": 3,
+   "ok": 0,
+   "status": {},
+   "errors": {
+    "TimeoutError": 3
+   }
+  },
+  "www.operations.amsa.gov.au": {
+   "requests": 1,
+   "ok": 1,
+   "status": {},
+   "errors": {}
+  },
+  "hydrography.paknavy.gov.pk": {
+   "requests": 5,
+   "ok": 5,
+   "status": {},
+   "errors": {}
+  }
+ },
+ "finishedAt": 1793461687762,
+ "files": [
+  {
+   "file": "nms.json",
+   "bytes": 3710108,
+   "sha256": "fd6fe7101171a768f5f3b75cd8246695065c176065a4d4556f7d8ef1a894d73d"
+  },
+  {
+   "file": "nav-warnings.json",
+   "bytes": 4598476,
+   "sha256": "bfa28ac36083e9823c837f587c9f29f731d763c74f38c821387c429eddcfc63d"
+  },
+  {
+   "file": "update.json",
+   "bytes": 275779,
+   "sha256": "dc6af32ddab61d2a510f9ec0886f4117a04a812cbb5d7b9a9e571c8b26d79cd4"
+  }
+ ],
+ "faa": {
+  "RJJJ": {
+   "ok": true,
+   "features": 1060
+  },
+  "RJSM": {
+   "ok": true,
+   "features": 53
+  },
+  "RJCJ": {
+   "ok": true,
+   "features": 31
+  },
+  "RJTY": {
+   "ok": true,
+   "features": 36
+  },
+  "RJTA": {
+   "ok": true,
+   "features": 20
+  },
+  "RJOI": {
+   "ok": true,
+   "features": 33
+  },
+  "RODN": {
+   "ok": true,
+   "features": 78
+  },
+  "ROTM": {
+   "ok": true,
+   "features": 19
+  },
+  "ROAH": {
+   "ok": true,
+   "features": 53
+  },
+  "RJAH": {
+   "ok": true,
+   "features": 7
+  },
+  "RJST": {
+   "ok": true,
+   "features": 0
+  },
+  "RJTJ": {
+   "ok": true,
+   "features": 7
+  },
+  "RJNG": {
+   "ok": true,
+   "features": 0
+  },
+  "RJNK": {
+   "ok": true,
+   "features": 21
+  },
+  "RJNH": {
+   "ok": true,
+   "features": 0
+  },
+  "RJFY": {
+   "ok": true,
+   "features": 0
+  },
+  "RJFN": {
+   "ok": true,
+   "features": 1
+  },
+  "RJFZ": {
+   "ok": true,
+   "features": 0
+  },
+  "RJFA": {
+   "ok": true,
+   "features": 0
+  },
+  "RJOH": {
+   "ok": true,
+   "features": 13
+  },
+  "RJNA": {
+   "ok": true,
+   "features": 15
+  },
+  "ZYSH": {
+   "ok": true,
+   "features": 11
+  },
+  "ZBPE": {
+   "ok": true,
+   "features": 6
+  },
+  "ZSHA": {
+   "ok": true,
+   "features": 11
+  },
+  "ZGZU": {
+   "ok": true,
+   "features": 9
+  },
+  "ZPKM": {
+   "ok": true,
+   "features": 17
+  },
+  "ZHWH": {
+   "ok": true,
+   "features": 4
+  },
+  "ZLHW": {
+   "ok": true,
+   "features": 18
+  },
+  "ZWUQ": {
+   "ok": true,
+   "features": 18
+  },
+  "ZJSA": {
+   "ok": true,
+   "features": 5
+  },
+  "RCAA": {
+   "ok": true,
+   "features": 330
+  },
+  "RCPO": {
+   "ok": true,
+   "features": 1
+  },
+  "RCMQ": {
+   "ok": true,
+   "features": 22
+  },
+  "RCKU": {
+   "ok": true,
+   "features": 18
+  },
+  "RCSQ": {
+   "ok": true,
+   "features": 0
+  },
+  "RCNN": {
+   "ok": true,
+   "features": 43
+  },
+  "RCDC": {
+   "ok": true,
+   "features": 4
+  },
+  "RCSS": {
+   "ok": true,
+   "features": 149
+  },
+  "RCQS": {
+   "ok": true,
+   "features": 0
+  },
+  "RCYU": {
+   "ok": true,
+   "features": 27
+  },
+  "RCAY": {
+   "ok": true,
+   "features": 2
+  },
+  "RCQC": {
+   "ok": true,
+   "features": 10
+  },
+  "RKRR": {
+   "ok": true,
+   "features": 497
+  },
+  "RKSO": {
+   "ok": true,
+   "features": 67
+  },
+  "RKJK": {
+   "ok": true,
+   "features": 31
+  },
+  "RKSG": {
+   "ok": true,
+   "features": 19
+  },
+  "RKTI": {
+   "ok": true,
+   "features": 1
+  },
+  "RKTU": {
+   "ok": true,
+   "features": 31
+  },
+  "RKSW": {
+   "ok": true,
+   "features": 0
+  },
+  "RKTP": {
+   "ok": true,
+   "features": 1
+  },
+  "RKTY": {
+   "ok": true,
+   "features": 1
+  },
+  "RKSM": {
+   "ok": true,
+   "features": 8
+  },
+  "RKPE": {
+   "ok": true,
+   "features": 0
+  },
+  "RKTE": {
+   "ok": true,
+   "features": 0
+  },
+  "RKTN": {
+   "ok": true,
+   "features": 6
+  },
+  "RKNN": {
+   "ok": true,
+   "features": 1
+  },
+  "ZKKP": {
+   "ok": true,
+   "features": 1
+  },
+  "ZKPY": {
+   "ok": true,
+   "features": 9
+  },
+  "ZKWS": {
+   "ok": true,
+   "features": 0
+  },
+  "RPHI": {
+   "ok": true,
+   "features": 80
+  },
+  "RPLC": {
+   "ok": true,
+   "features": 53
+  },
+  "RPLB": {
+   "ok": true,
+   "features": 10
+  },
+  "RPVP": {
+   "ok": true,
+   "features": 6
+  },
+  "RPVM": {
+   "ok": true,
+   "features": 30
+  },
+  "RPLS": {
+   "ok": true,
+   "features": 8
+  },
+  "RPMZ": {
+   "ok": true,
+   "features": 18
+  },
+  "RPML": {
+   "ok": true,
+   "features": 1
+  },
+  "RPMD": {
+   "ok": true,
+   "features": 10
+  },
+  "RPUT": {
+   "ok": true,
+   "features": 6
+  },
+  "RPUY": {
+   "ok": true,
+   "features": 12
+  },
+  "RPVI": {
+   "ok": true,
+   "features": 17
+  },
+  "RPMC": {
+   "ok": true,
+   "features": 13
+  },
+  "UHHH": {
+   "ok": true,
+   "features": 164
+  },
+  "UHMM": {
+   "ok": true,
+   "features": 138
+  },
+  "UEEE": {
+   "ok": true,
+   "features": 60
+  },
+  "UIII": {
+   "ok": true,
+   "features": 89
+  },
+  "UHWW": {
+   "ok": true,
+   "features": 15
+  },
+  "UHSS": {
+   "ok": true,
+   "features": 16
+  },
+  "UHPP": {
+   "ok": true,
+   "features": 6
+  },
+  "UHMA": {
+   "ok": true,
+   "features": 1
+  }
+ },
+ "totals": {
+  "notam": 3578,
+  "nav": 2712,
+  "notamErrors": 0,
+  "navErrors": 19
+ }
+}
