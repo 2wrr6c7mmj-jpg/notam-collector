@@ -2,13 +2,15 @@
 //
 //   node update-ledger.mjs --items public/api/nav-warnings.json \
 //                          --ledger state/tw-firing-ledger.json [--plan]
+//                          [--reread 1384,1282]
 //
 // The collector saves each notice of the Fisheries Agency as a title and a
 // link (item id `TW-FA-<notice number>`). For a notice that is new, or whose
 // list of attachments has changed, this fetches the page of the notice and
 // its attachments, takes their text out (extract.py), reads areas and times
 // from it (notice.mjs, known-areas.mjs) and puts them in the ledger
-// (ledger.mjs). `--plan` only prints how many notices are waiting.
+// (ledger.mjs). `--plan` only prints how many notices are waiting. `--reread`
+// reads the given notices again as if they were new.
 //
 // The attachments and their text name contact persons. They stay in a
 // temporary directory that is removed before this ends; the ledger keeps
@@ -248,12 +250,23 @@ export async function updateLedger(
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const option = name => process.argv[process.argv.indexOf(name) + 1];
   const items = JSON.parse(await fs.readFile(option('--items'), 'utf8')).items;
-  const ledger = JSON.parse(await fs.readFile(option('--ledger'), 'utf8'));
+  const saved = JSON.parse(await fs.readFile(option('--ledger'), 'utf8'));
+  const reread = process.argv.includes('--reread') ? option('--reread').split(',') : [];
+  const ledger = reread.length
+    ? {
+        ...saved,
+        notices: Object.fromEntries(
+          Object.entries(saved.notices).filter(([number]) => !reread.includes(number)),
+        ),
+      }
+    : saved;
   if (process.argv.includes('--plan')) {
     console.log(waitingNotices(items, ledger).length);
   } else {
     const {ledger: next, done} = await updateLedger(items, ledger);
-    if (next !== ledger) await fs.writeFile(option('--ledger'), JSON.stringify(next));
+    // A notice that could not be fetched again keeps the entry it had.
+    const notices = {...saved.notices, ...next.notices};
+    if (next !== ledger) await fs.writeFile(option('--ledger'), JSON.stringify({...next, notices}));
     console.log(JSON.stringify(done));
   }
 }

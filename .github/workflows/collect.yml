@@ -16,6 +16,9 @@ on:
       sources:
         description: 'Only these maritime source ids (comma separated, blank = all)'
         required: false
+      reread_taiwan:
+        description: 'Read these Taiwanese firing notices again (notice numbers, comma separated)'
+        required: false
       seed_china_from_site:
         description: 'One-time: copy still-relevant Chinese warnings from the legacy Sites payload before collecting'
         type: boolean
@@ -84,10 +87,15 @@ jobs:
       - name: Count Taiwanese firing notices not read yet
         if: env.SKIP != '1'
         continue-on-error: true
+        env:
+          REREAD: ${{ inputs.reread_taiwan }}
         run: |
           echo "TW_NOTICES=0" >> "$GITHUB_ENV"
-          waiting=$(node taiwan-notice/update-ledger.mjs --plan \
-            --items public/api/nav-warnings.json --ledger state/tw-firing-ledger.json)
+          set -- --items public/api/nav-warnings.json
+          case "$REREAD" in *[!0-9,]*) REREAD= ;; esac
+          [ -n "$REREAD" ] && set -- "$@" --reread "$REREAD"
+          echo "TW_ARGS=$*" >> "$GITHUB_ENV"
+          waiting=$(node taiwan-notice/update-ledger.mjs --plan "$@" --ledger state/tw-firing-ledger.json)
           echo "TW_NOTICES=${waiting}" >> "$GITHUB_ENV"
           echo "Taiwanese firing notices waiting to be read: ${waiting}"
       - name: Install the tools that take text out of attachments
@@ -106,8 +114,7 @@ jobs:
         timeout-minutes: 12
         run: |
           cp state/tw-firing-ledger.json state/tw-firing-ledger.next.json
-          node taiwan-notice/update-ledger.mjs \
-            --items public/api/nav-warnings.json --ledger state/tw-firing-ledger.next.json \
+          node taiwan-notice/update-ledger.mjs $TW_ARGS --ledger state/tw-firing-ledger.next.json \
             | tee -a "$GITHUB_STEP_SUMMARY"
           mv state/tw-firing-ledger.next.json state/tw-firing-ledger.json
       - name: Publish state and public data to the data branch
