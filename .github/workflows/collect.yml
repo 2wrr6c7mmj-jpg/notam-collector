@@ -19,6 +19,10 @@ on:
       reread_taiwan:
         description: 'Read these Taiwanese firing notices again (notice numbers, comma separated)'
         required: false
+      strip_taiwan_attachment_text:
+        description: 'One-time: cut attachment text saved for Taiwanese firing notices out of the saved state'
+        type: boolean
+        default: false
       seed_china_from_site:
         description: 'One-time: copy still-relevant Chinese warnings from the legacy Sites payload before collecting'
         type: boolean
@@ -69,6 +73,9 @@ jobs:
       - name: One-time backfill of Chinese warnings from Sites
         if: env.SKIP != '1' && inputs.seed_china_from_site
         run: node --no-warnings tools/seed-china-from-site.mjs --db state/notam.sqlite
+      - name: One-time removal of saved Taiwanese attachment text
+        if: env.SKIP != '1' && inputs.strip_taiwan_attachment_text
+        run: node --no-warnings tools/strip-taiwan-attachment-text.mjs --db state/notam.sqlite
       - name: Collect (failures keep the previous record)
         if: env.SKIP != '1'
         env:
