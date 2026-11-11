@@ -130,18 +130,9 @@ export async function collectTwFisheriesSource(source:NavSource,previous:SourceR
         if(!body)throw new Error('本文が空です');
         const links=twAllDocuments(html,n.sourceUrl!),item:TwNotice={...n,cancelled:n.cancelled===true||prior[n.id]?.enriched?.cancelled===true||prior[n.id]?.lastSuccess?.cancelled===true||twExplicitSelfCancellation(n.location,body),text:`${n.location}\n${body}`,warnings:n.warnings.filter(w=>!w.startsWith('未解析：')),taiwan:{...n.taiwan!,version:2,publisher:'FA',role:'supplement',documents:[{...detail.receipt,extraction:'complete'}],attachments:links.map(a=>({url:a.url,state:'pending'})),bodyComplete:true,semanticComplete:false,unresolved:[]}};
         let odt:Uint8Array|undefined,odtUrl:string|undefined,odtCount=0;const texts:string[]=[],coordinateShapes:Notice['shapes']=[];
-        for(const a of item.taiwan!.attachments){
-          try{
-            const sourceStop=twStopEvidence(undefined,requestBudget);if(sourceStop)throw new Error(sourceStop.reason);
-            if(Date.now()>deadline-1000)throw new Error('今回の取得時間上限');
-            const r=await get(a.url,links.find(link=>link.url===a.url)?.format==='odt'?512*1024:1536*1024,articleDeadline);
-            try{
-              const doc=extractTwDocument(r.bytes,r.receipt);item.taiwan!.documents.push(doc.receipt);a.state=doc.review?'complete':'unsupported';a.reason=doc.receipt.reason;texts.push(`原文添付: ${a.url}\n${doc.text}`);
-              if(doc.format==='odt'){odtCount++;odt=r.bytes;odtUrl=a.url;coordinateShapes.push(...parseTwOdtPartialGeometry(twOdtContent(r.bytes)).map(shape=>({...shape,sourceReference:a.url})));}
-            }catch(e){a.state='unsupported';a.reason=e instanceof Error?e.message:'抽出未対応';item.taiwan!.documents.push({...r.receipt,extraction:'unsupported',reason:a.reason});}
-          }catch(e){failed++;a.state='error';a.reason=e instanceof Error?e.message:'添付取得失敗';}
-        }
-        item.text+='\n\n'+texts.join('\n\n');
+        // The attachments are not fetched here. After the collection,
+        // taiwan-notice/update-ledger.mjs reads areas and times from them and
+        // keeps none of their text, which names contact persons.
         const allText=texts.join('\n'),compact=allText.replace(/\s/g,'');
         const issue=compact.match(/發文日期[：:]中華民國(1\d{2})年(\d{1,2})月(\d{1,2})日/);
         const issueDay=issue?twDay(`${+issue[1]+1911}/${issue[2]}/${issue[3]}`):undefined;
@@ -201,7 +192,7 @@ export async function collectTwFisheriesSource(source:NavSource,previous:SourceR
       return {...twUnknown(n,c?`原文確認失敗：${c.detail}`:'本文・全添付の再確認待ちです。'),taiwan:n.taiwan} as TwNotice;
     });
     const parsed=items.filter(n=>n.taiwan?.semanticComplete).length;
-    const result:TwSourceRecord={...(requestBudget.backoff?{taiwanBackoff:requestBudget.backoff}:{}),items:items.map(n=>materializeTwNotice(n,cache[n.id])),revision:3,twOdt:{version:2,cursor:old.twOdt?.cursor===1?0:1,cache,listingReceipt,rssReceipt},status:{...source,state:parsed===items.length&&!failed?'ok':'partial',checkedAt,fetchedAt:checkedAt,count:items.length,pages,detail:`現行一覧${listing.length}件/RSS${rss.length}件。保存${items.length}件、全文・添付照合済み${parsed}件。今回${attempted}件確認、取得失敗・予算保留${failed}件。1回最大6HTTP・本文2件、2時間以上間隔。3か月内と継続中・取消訂正対象を優先。未知PDF等は未対応。${discoveryProblems.join(' / ')} 再配布条件は資料ごとに確認。`}};return result;
+    const result:TwSourceRecord={...(requestBudget.backoff?{taiwanBackoff:requestBudget.backoff}:{}),items:items.map(n=>materializeTwNotice(n,cache[n.id])),revision:3,twOdt:{version:2,cursor:old.twOdt?.cursor===1?0:1,cache,listingReceipt,rssReceipt},status:{...source,state:parsed===items.length&&!failed?'ok':'partial',checkedAt,fetchedAt:checkedAt,count:items.length,pages,detail:`現行一覧${listing.length}件/RSS${rss.length}件。保存${items.length}件。今回${attempted}件の本文を確認、取得失敗・予算保留${failed}件。1回に本文2件まで、2時間以上間隔。添付の区域・期間は収集後に別に読み取り。${discoveryProblems.join(' / ')} 再配布条件は資料ごとに確認。`}};return result;
   }catch(error){const stop=twStopEvidence(error,requestBudget);return {...previous,...(stop?{taiwanBackoff:stop}:{}),items:previous.items.map(n=>twUncertainNotice(n,'最新原文の照合失敗。保存済み座標・日時を要確認として保持し、現在有効とは断定しません。')),status:{...previous.status,...source,state:'error',checkedAt,count:previous.items.length,pages,detail:`${error instanceof Error?error.message:'台湾取得失敗'}。警告0件とは確認できません。保存済み原文を保持。`}};}
 }
 
